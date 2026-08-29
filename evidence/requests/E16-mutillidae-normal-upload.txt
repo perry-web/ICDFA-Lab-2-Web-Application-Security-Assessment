@@ -1,0 +1,29 @@
+POST /index.php?page=upload-file.php HTTP/1.1
+Host: 10.5.5.11
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: http://10.5.5.11/index.php?page=upload-file.php
+Content-Type: multipart/form-data; boundary=----geckoformboundary9450c77c74942735392986dbbb11c3c
+Content-Length: 671
+Origin: http://10.5.5.11
+Connection: keep-alive
+Cookie: PHPSESSID=idme06sahpg57uff449fgr6cb4; showhints=1
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+------geckoformboundary9450c77c74942735392986dbbb11c3c
+Content-Disposition: form-data; name="UPLOAD_DIRECTORY"
+
+/tmp
+------geckoformboundary9450c77c74942735392986dbbb11c3c
+Content-Disposition: form-data; name="MAX_FILE_SIZE"
+
+2000000
+------geckoformboundary9450c77c74942735392986dbbb11c3c
+Content-Disposition: form-data; name="filename"; filename="lab2-marker.png"
+Content-Type: image/png
+
+PNG
+

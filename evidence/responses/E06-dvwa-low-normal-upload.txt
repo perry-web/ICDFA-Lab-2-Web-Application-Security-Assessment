@@ -1,0 +1,25 @@
+POST /vulnerabilities/upload/ HTTP/1.1
+Host: 10.5.5.12
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Content-Type: multipart/form-data; boundary=----geckoformboundary892d697f8c82188596b9b26a820c80e9
+Content-Length: 525
+Origin: http://10.5.5.12
+Connection: keep-alive
+Referer: http://10.5.5.12/vulnerabilities/upload/
+Cookie: PHPSESSID=4gq85erbitrad7i5jt6uvf7kb4; security=low
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+------geckoformboundary892d697f8c82188596b9b26a820c80e9
+Content-Disposition: form-data; name="MAX_FILE_SIZE"
+
+100000
+------geckoformboundary892d697f8c82188596b9b26a820c80e9
+Content-Disposition: form-data; name="uploaded"; filename="lab2-marker.png"
+Content-Type: image/png
+
+PNG
+

@@ -1,0 +1,31 @@
+[2026-08-29] LAB 2 START
+Action: Prepared harmless text and PNG marker files.
+Tool: Kali/Linux terminal
+Purpose: Establish controlled upload test content.
+Safety: Non-executable files only; no external callbacks or destructive actions.
+
+[2026-08-29] DVWA UPLOAD BASELINE
+Action: Uploaded valid PNG marker at Low security.
+Result: Accepted; application reported ../../hackable/uploads/lab2-marker.png.
+
+[2026-08-29] DVWA UPLOAD MISMATCH
+Action: Uploaded lab2-mismatch.png containing plain ASCII text.
+Result: Accepted; application reported ../../hackable/uploads/lab2-mismatch.png.
+
+[2026-08-29] DVWA STORAGE VERIFICATION
+Action: Inspected only the learner-created files in /var/www/html/hackable/uploads/.
+Result: lab2-marker.png identified as PNG; lab2-mismatch.png identified as ASCII text.
+Observation: The mismatched content was stored under the .png filename.
+Safety: Only learner-created marker files were inspected.
+
+[2026-08-29] DVWA COMMAND BASELINE
+Action: Submitted local DVWA container IP 10.5.5.12 to Ping a device.
+Result: 4 packets transmitted, 4 received, 0% packet loss.
+Purpose: Establish normal command-backed behavior.
+
+[2026-08-29] DVWA COMMAND INJECTION PROOF
+Action: Submitted harmless modified input through the ip parameter.
+Input: 10.5.5.12 && echo ICDFA-LAB2-CMD-MARKER
+Result: Normal ping output followed by ICDFA-LAB2-CMD-MARKER.
+Observation: Shell command structure was interpreted and the echo command executed.
+Impact boundary: No unrelated files, credentials, external systems, persistence, or destructive operations accessed.

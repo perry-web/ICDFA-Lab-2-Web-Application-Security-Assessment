@@ -1,0 +1,2 @@
+431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460  markers/lab2-marker.png
+8242651417ea05c42ec91ba992d06c7cfcc99e1d3d06c56d0e38f7d88375af5d  markers/lab2-marker.txt
